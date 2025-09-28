@@ -1,0 +1,12 @@
+name: battery-stack
+version: 0.1.0
+description: Asynchronous battery information display for Fish shell prompts
+author: rumboon
+repository: https://github.com/rumboon/battery-stack
+license: MIT
+keywords:
+  - fish
+  - prompt
+  - battery
+  - async
+  - status
