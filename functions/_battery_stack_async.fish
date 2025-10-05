@@ -14,7 +14,7 @@ function _battery_stack_async --description 'Asynchronously get battery informat
     command kill $_battery_last_pid 2>/dev/null
 
     # Start async battery info generation using worker function
-    fish --private -c "_battery_stack_worker $_battery_stack_data" &
+    fish --private -c "_battery_stack_worker $_battery_stack_data" & disown
 
     set -g _battery_last_pid $last_pid
 end
